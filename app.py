@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 st.title("Movie Recommendatation system")
-movie_df=pickle.load(open("movie_recm.pkl","rb"))
+movie_df=pickle.load(urllib.request.urlopen("https://drive.google.com/file/d/11xqhgMGoIxRuCmcBEV6uAJWppoKnKfwG/view?usp=drive_link","rb"))
 similarity=pickle.load(open("similarity.pkl","rb"))
 list_movie=np.array(movie_df["title"])
 option = st.selectbox(
