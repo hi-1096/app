@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
+import urllib
 
 st.title("Movie Recommendatation system")
 movie_df=pickle.load(urllib.request.urlopen("https://drive.google.com/file/d/11xqhgMGoIxRuCmcBEV6uAJWppoKnKfwG/view?usp=drive_link","rb"))
